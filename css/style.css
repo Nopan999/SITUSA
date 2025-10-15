@@ -1,0 +1,156 @@
+/* Reset & font dasar */
+
+@media (max-width: 800px) {
+  .container_solusi ol li {
+    max-width: 100%; /* di HP tetap lebar penuh */
+  }
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background : white;
+    color: #333;
+    
+}
+
+/* Header halaman */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1f2937;
+    color: white;
+    
+}
+
+.container_solusi {
+    padding-left: 5%;
+    font-family: sans-serif;
+    font-size: 20;
+    margin-bottom: 35px;
+  line-height: 1.6;
+  background: #f8f9fb;      /* warna lembut agar langkah terlihat terpisah */
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  max-width: 50%;    
+   word-wrap: break-word; 
+   margin: 0 auto 25px auto;
+}
+
+/* Container utama */
+.container {
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('pantai.jpg'); /* ganti dengan nama dan lokasi file gambarmu */
+    background-size: cover;        /* agar gambar menutupi seluruh area */
+    background-position: center;   /* posisi gambar di tengah */
+    background-repeat: no-repeat;  /* agar tidak berulang */
+    padding: 1%;                 /* beri jarak agar konten tidak menempel */
+    min-height: 100vh;             /* agar tinggi mengikuti layar */
+    
+}
+
+.container_sub {
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('diamond.jpg'); /* ganti dengan nama dan lokasi file gambarmu */
+    background-size: cover;        /* agar gambar menutupi seluruh area */
+    background-position: center;   /* posisi gambar di tengah */
+    background-repeat: no-repeat;  /* agar tidak berulang */
+    padding: 1%;                 /* beri jarak agar konten tidak menempel */
+    min-height: 100vh;             /* agar tinggi mengikuti layar */
+    
+}
+
+
+
+.container_sub {
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: azure;
+    background-size: cover;        /* agar gambar menutupi seluruh area */
+    background-position: center;   /* posisi gambar di tengah */
+    background-repeat: no-repeat;  /* agar tidak berulang */
+    padding: 1%;                 /* beri jarak agar konten tidak menempel */
+    min-height: 100vh;             /* agar tinggi mengikuti layar */
+    
+}
+
+.home-button {
+  position: fixed;        /* agar selalu di pojok meski discroll */
+  top: 10px;              /* jarak dari atas */
+  left: 10px;             /* jarak dari kiri */
+  background-color: #f8f9fa; /* warna biru */
+  color: white;           /* warna teks/ikon */
+  padding: 8px 10px;      /* ukuran tombol */
+  border-radius: 50%;     /* membuatnya bulat */
+  font-size: 18px;        /* ukuran ikon */
+  text-decoration: none;  /* hilangkan garis bawah */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* efek bayangan */
+  transition: 0.3s;       /* efek hover halus */
+}
+.home-button:hover {
+  background-color: #0056b3; /* warna saat hover */
+}
+
+/* Grid untuk kartu kategori */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+
+/* Kartu individual */
+.card {
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7); /* putih transparan 70% */
+    border-radius: 3px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* jadi lebih jelas saat hover */
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+/* State awal sebelum animasi */
+.card.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.pengembang {
+    text-align: right;
+    color: black;
+}
+
+/* Efek masuk */
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+}
+.copyright {
+    position: fixed;           /* agar selalu di pojok bawah layar */
+    right: 10px;               /* jarak dari kanan */
+    bottom: 10px;              /* jarak dari bawah */
+    color: white;              /* warna teks */
+    font-size: 0.9rem;         /* ukuran kecil */
+    opacity: 0.8;              /* sedikit transparan */
+    z-index: 1000;             /* pastikan di atas elemen lain */
+    font-family: 'Segoe UI', sans-serif;
+}
