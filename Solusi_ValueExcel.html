@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Solusi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="index.html" class="home-button">🏠</a>
+    <header>
+        <h1>Solusi: Error #Value! saat menghitung Excel</h1>
+    </header>
+
+    <main class="container_solusi">
+        <h1>Penjelasan Masalah</h1>
+        <p>Error Value adalah eror yang muncul karena excel gagal dalam eksekusi sebuah perhitungan
+            ada beberapa penyebabnya namun yang paling sederhana adalah format data pada cell bukan number.</p>
+
+        <h2>Langkah Penyelesaian </h2>
+        <ol>
+            <li>Langkah pertama yang perlu diperhatikan adalah memastikan data pada cell memiliki format number bukan text
+            </li>
+            <li>Pada saat memasukan data secara manual masukan nomor tanpa tanda baca apapun seperti titik, atau koma agar nantinya 
+                bisa dihitung oleh excel.</li>
+            <img src="Asset_ValueExcel/3.1.png" alt="Gambar Solusi" style="width:100%; max-width:600px;">
+            <li>Untuk menambahkan tanda baca klik kanan pada cell, format cell, centang use 1000 separator untuk menambahkan titik pada 
+                angka ribuan, anda juga dapat menyesuaikan dengan fromat penomoran yang ingin di gunakan
+                seperti currency/accounting untuk mata uang, percentage untuk persentase dll.
+            </li>
+            <img src="Asset_ValueExcel/3.2.png" alt="Gambar Solusi" style="width:100%; max-width:600px;">
+            <li>Jika data sudah terisi oleh data excel akan memastikan apakah data sudah berbentuk nomor atau masih text
+                anda bisa langsung mengubah format cell ke number jika terdapat tanda seru, pilih convert text to number. </li>
+                <img src="Asset_ValueExcel/3.3.png" alt="Gambar Solusi" style="width:100%; max-width:600px;">
+            <li>Jalankan Perhitungan seperti biasa, error dapat muncul jadi pastikan anda menggunkan rumus yang benar</li>
+        </ol>
+
+       
+       
+
+        <h2>Video Panduan</h2>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/BkXYeahkiaw?si=VD5YwfPrXXwFmutH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</body>
+</html>
