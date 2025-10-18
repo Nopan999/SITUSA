@@ -14,13 +14,6 @@ body {
   background-position: center;
 }
 
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 /* Header halaman */
 header {
     text-align: center;
@@ -163,3 +156,4 @@ header {
     font-family: 'Segoe UI', sans-serif;
 
 }
+
