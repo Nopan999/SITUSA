@@ -10,7 +10,15 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background : white;
     color: #333;
-    
+     background-size: cover;
+  background-position: center;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Header halaman */
@@ -153,4 +161,5 @@ header {
     opacity: 0.8;              /* sedikit transparan */
     z-index: 1000;             /* pastikan di atas elemen lain */
     font-family: 'Segoe UI', sans-serif;
+
 }
